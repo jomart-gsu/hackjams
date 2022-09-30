@@ -74,7 +74,7 @@ def start_graphics(
 
     tk = Tk()
     tk.protocol("WM_DELETE_WINDOW", on_window_close)
-    gc.canvas = Canvas(tk, width=500, height=400, bd=0, bg="papaya whip")
+    gc.canvas = Canvas(tk, width=window_width, height=window_height, bd=0, bg="papaya whip")
     gc.canvas.pack()
     gc.canvas.bind_all("<KeyPress>", handle_key_press)
 
